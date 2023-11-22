@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello RecetteController!{% endblock %}
+
+{% block body %}
+
+<div id="container"></div>
+<h2 class="recipe-mainTitle text-center mt-5 display-3 fw-bold" id="anchor-recipes">Recettes</h2>
+
+<div class="recipe-container">
+                                           <div class="recipe-wrapper">
+                 <h3 class="recipe-title">Poke Bowl</h3>
+                 <a href="{{path('app_recipe1')}}">
+                  <img src="{{ asset('assets/images/potho-10.jpg')}}" alt="Poke Bowl" class="welcome-img recipe-img">
+                 </a>
+                    <a href="{{path('app_recipe1')}}" class="see-more-link">
+                        Voir plus
+                    </a>
+                </div>
+                                                           <div class="recipe-wrapper">
+                 <h3 class="recipe-title">Pancakes allégés</h3>
+                 <a href="{{path('app_recipe2')}}">
+                  <img src="https://img.passeportsante.net/1200x675/2022-09-22/shutterstock-1907509783.webp" alt="Pancakes allégés" class="welcome-img recipe-img">
+                 </a>
+                    <a href="{{path('app_recipe2')}}" class="see-more-link">
+                        Voir plus
+                    </a>
+                </div>
+                                                           <div class="recipe-wrapper">
+                 <h3 class="recipe-title">Salade Fraicheur</h3>
+                 <a href="{{path('app_recipe3')}}">
+                  <img src="https://www.daucyfoodservice.com/wp-content/uploads/2021/12/oeufs-durs-ecales-recette-salade-fraicheur-scaled-1.jpg" alt="Salade Fraicheur" class="welcome-img recipe-img">
+                 </a>
+                    <a href="{{path('app_recipe3')}}" class="see-more-link">
+                        Voir plus
+                    </a>
+                </div>
+                                                           <div class="recipe-wrapper">
+                 <h3 class="recipe-title">Pain perdu aux fruits</h3>
+                 <a href="{{path('app_recipe4')}}">
+                  <img src="https://lacuisinedefabrice.fr/wp-content/uploads/2009/03/brioche-perdue-et-fruits-exotiques.jpg" alt="Pain perdu aux fruits" class="welcome-img recipe-img">
+                 </a>
+                    <a href="{{path('app_recipe4')}}" class="see-more-link">
+                        Voir plus
+                    </a>
+                </div>
+                                     </div>
+
+{% endblock %}

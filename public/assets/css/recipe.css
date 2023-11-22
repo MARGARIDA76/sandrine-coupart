@@ -1,0 +1,411 @@
+/* .recipe-mainTitle, .review-form, #empty-review, .review-note {
+    display: flex;
+    justify-content: center;
+} */
+
+.recipe-mainTitle {
+    color: #46d40d;
+    font-size: 1.5em;
+    font-family: 'Baloo Chettan 2', cursive;
+    text-align: center;
+}
+
+.welcome-img {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.photo-wrapper {
+    position: relative;
+}
+
+.recipe-reviewAverage {
+    position: absolute;
+    top: 0;
+    margin: 0.5em;
+    font-size: 3.5em;
+    color: whitesmoke;
+    text-shadow: 0 4px 4px grey;
+    font-family: 'Carme', sans-serif;
+    text-align: center;
+}
+
+.quick-info-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.recipe-quick-info {
+    display: flex;
+    align-items: center;
+}
+
+.recipe-quick-info>img {
+    width: 2em;
+    height: 2em;
+    margin-right: 0.5em;
+}
+
+.recipe-quick-info>p {
+    font-size: 1.5em;
+}
+
+.time,
+h3 {
+    font-family: 'Baloo Chettan 2', cursive;
+}
+
+.time {
+    display: block;
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.2em;
+    display: inline-block;
+    padding-bottom: 0.5em;
+    border-bottom: solid 6px #46d40d;
+    margin-bottom: 0;
+}
+
+.info-container>h3 {
+    font-size: 1.2em;
+}
+
+.info-container>p {
+    font-size: 1em;
+}
+
+.recipe-info,
+.info-container {
+    margin: 1.5em;
+}
+
+.recipe-info>* {
+    font-size: 1em;
+}
+
+.review-form {
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-field {
+    display: flex;
+}
+
+.field-label,
+.field-input>* {
+    font-size: 3em;
+    font-family: 'Fenix', serif;
+}
+
+.field-input>* {
+    height: 2em;
+    border-radius: 10px;
+    margin-top: 1em;
+    font-size: 1em;
+    margin-bottom: 2em;
+}
+
+.comment {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 1em;
+}
+
+.comment>* {
+    height: 10em;
+    margin: 0.5em;
+    width: 100%;
+}
+
+.button-wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.form-button {
+    transition: linear 0.2s;
+    padding: 0.5em 0;
+    background-color: #46d40d;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    margin: 1em 2em;
+    font-size: 1em;
+    width: 100%;
+}
+
+.form-button:hover {
+    opacity: 0.8;
+    padding-left: 2em;
+}
+
+.note-bubble {
+    display: flex;
+    position: relative;
+    margin: 1em;
+}
+
+.review-wrapper {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px black;
+    padding: 0.5em;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    transform: rotateY(180deg);
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    display: block;
+    cursor: pointer;
+}
+
+.rating label:before {
+    content: '';
+    display: block;
+    position: relative;
+    width: 25px;
+    height: 25px;
+    margin-right: 1em;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: solid 1px lightgray;
+    background-color: whitesmoke;
+}
+
+.rating label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    margin-right: 1em;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: solid 1px lightgray;
+    background-color: #46d40d;
+    opacity: 0;
+    transition: .5s;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+}
+
+.rating label:hover:after,
+.rating input:checked~label:after {
+    opacity: 1;
+}
+
+#empty-review {
+    margin: 2em;
+    font-size: 2em;
+    font-family: 'Fenix', serif;
+    font-style: italic;
+}
+
+.patient-review {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Fenix', serif;
+}
+
+.review-mainTitle {
+    font-size: 2em;
+    text-align: center;
+    color: #46d40d;
+    font-family: 'Baloo Chettan 2';
+}
+
+.review-date {
+    display: flex;
+    align-items: baseline;
+    font-size: 1em;
+}
+
+.review-date>* {
+    margin-right: 1em;
+}
+
+.review-comment {
+    font-size: 1em;
+}
+
+.review-note {
+    align-items: center;
+    min-height: 1.5em;
+    min-width: 1.5em;
+    font-size: 1.5em;
+    background-color: #46d40d;
+    border-radius: 50%;
+    color: #f5f5f5;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 1160px) {
+    main {
+        width: 50%;
+        margin: auto;
+    }
+
+    .image-wrapper {
+        position: relative;
+
+    }
+
+    .photo-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding-bottom: 10px;
+        border-bottom: 1px lightgray solid;
+    }
+
+    .recipe-img {
+        display: flex;
+        width: 400px;
+        max-height: 650px;
+        border-radius: 20px;
+        margin-right: 2em;
+
+    }
+
+    .quick-info-container {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 400px;
+    }
+
+    .recipe-quick-info>* {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .time {
+        font-size: 2em;
+        margin-right: 2em;
+        margin-left: 0.5em;
+    }
+
+    .recipe-info {
+        margin: 0;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+
+    .info-wrapper {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding-bottom: 10px;
+        border-bottom: 1px lightgray solid;
+    }
+
+    .allergen-infos,
+    .diet-infos {
+        display: flex;
+        align-items: baseline;
+    }
+
+    .allergen-text,
+    .diet-text {
+        margin: 0 1em;
+    }
+
+    .main-info-wrapper {
+        margin: 0;
+    }
+
+    .main-info-wrapper>p {
+        font-size: 1em;
+    }
+
+    .info-container {
+        margin: 0 4em;
+    }
+
+    .info-container>h3 {
+        font-size: 1em;
+    }
+
+    .info-container>p {
+        font-size: 1em;
+    }
+
+    .review-form-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 6em 0;
+        width: 100%;
+    }
+
+    .field-input>* {
+        height: 1.5em;
+        width: 100%;
+        border-radius: 20px;
+        margin-top: 1em;
+        padding: 0.5em;
+        font-size: 1.25em;
+    }
+
+    .rating label:before,
+    .rating label:after {
+        height: 30px;
+        width: 30px;
+    }
+
+    .review-container {
+        margin: 4em;
+    }
+
+    .review-mainTitle {
+        text-align: start;
+    }
+
+    .comment>* {
+        height: 10em;
+        resize: none;
+    }
+
+    .button-wrapper {
+        justify-content: end;
+    }
+
+    .form-button {
+        transition: linear 0.2s;
+        width: 20%;
+        font-size: 1em;
+        margin: 1.5em;
+        cursor: pointer;
+    }
+
+    #empty-review {
+        margin: auto;
+        font-size: 1em;
+    }
+}

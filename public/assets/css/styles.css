@@ -1,0 +1,649 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;1,500&family=Parisienne&family=Roboto:ital,wght@0,500;0,700;0,900;1,400;1,500;1,900&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+#neubar {
+    background: #fae8d2;
+    box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.4);
+
+}
+
+.nav-item .active {
+    border-radius: 6px;
+    background: linear-gradient(145deg, #ffe7ca, #f5d7b2);
+    box-shadow: 4px 4px 8px #ddc1a0,
+        -4px -4px 8px #f7e5cc;
+}
+
+
+/*Navbar*/
+
+#neubar .dropdown-menu a:hover {
+    color: #454545
+}
+
+#neubar .nav-item {
+    margin: auto 4px;
+}
+
+#neubar a {
+
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+#neubar .dropdown-menu {
+    background: #545454
+}
+
+a.navbar-brand {
+    color: #46d40d;
+    font-weight: bold;
+    font-family: Parisienne, sans-serif;
+    font-size: 35px;
+
+}
+
+.title h1 {
+
+    font-family: Parisienne;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/*end Navbar*/
+
+/*header */
+
+                   /*Header*/
+ #container {
+ width: 100%;
+ height: 100vh;
+ background: url('../images/diete0.jpg');
+ background-size: cover;
+ }
+        
+                   /* end Header*/
+        
+.heading{
+    width:90%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}  
+
+.heading h1{
+
+    font-size: 50px;
+    color:#000;
+    margin-bottom: 25px;
+    position: relative;
+    margin-top: 100px;
+}
+
+.heading h1::after {
+
+    content:"";
+    position:absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: auto;
+    background-color: #4caf50;
+
+}
+
+.heading p{
+
+    font-size: 18px;
+    color:#666;
+    margin-bottom: 35px;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.about{
+
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-image{
+
+    flex:1;
+    margin-right: 40px;
+    overflow: hidden;
+}
+
+.about-image img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+}
+
+.about-image img
+.about-content{
+    flex: 1;
+    
+}
+
+.about-content {
+
+    flex: 1;
+
+}
+
+
+.about-image:hover img {
+   transform: scale(1.2) ;
+   -webkit-transform: scale(1.2) ;
+   -moz-transform: scale(1.2) ;
+   -ms-transform: scale(1.2) ;
+   -o-transform: scale(1.2) ;
+}
+
+.about-content h2{
+
+   font-size: 23px;
+   margin-bottom: 15px;
+   color:#333;
+
+}
+
+.about-content p {
+
+    font-size: 18px;
+   line-height: 1.5;
+    color: #666;
+
+}
+
+
+@media screen and (max-width: 768px){
+
+    .heading{
+        padding:0px 20px;
+    }
+
+         .heading h1{
+             font-size: 36px;
+         }
+
+
+ .heading p {
+     font-size: 17px;
+     margin-bottom: 0px;
+ }
+
+ .container{
+
+    padding:0px;
+ }
+
+ .about {
+
+     padding: 20px;
+     flex-direction: column;
+ }
+
+ .about-image {
+
+    margin-right: 0px;
+    margin-bottom: 20px;
+ }
+
+
+}
+
+hr {
+
+    background: #46d40d;
+    width: 150px;
+    margin: 15px auto;
+
+}
+
+.image-rond {
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+/* .recipe-mainTitle, .review-form, #empty-review, .review-note {
+    display: flex;
+    justify-content: center;
+} */
+
+.recipe-mainTitle {
+    color: #c4dfaa;
+    font-size: 1.5em;
+    font-family: 'Baloo Chettan 2', cursive;
+    text-align: center;
+}
+
+.welcome-img {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.photo-wrapper {
+    position: relative;
+}
+
+.recipe-reviewAverage {
+    position: absolute;
+    top: 0;
+    margin: 0.5em;
+    font-size: 3.5em;
+    color: whitesmoke;
+    text-shadow: 0 4px 4px grey;
+    font-family: 'Carme', sans-serif;
+    text-align: center;
+}
+
+.quick-info-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.recipe-quick-info {
+    display: flex;
+    align-items: center;
+}
+
+.recipe-quick-info>img {
+    width: 2em;
+    height: 2em;
+    margin-right: 0.5em;
+}
+
+.recipe-quick-info>p {
+    font-size: 1.5em;
+}
+
+.time,
+h3 {
+    font-family: 'Baloo Chettan 2', cursive;
+}
+
+.time {
+    display: block;
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.2em;
+    display: inline-block;
+    padding-bottom: 0.5em;
+    border-bottom: solid 6px #f4b270;
+    margin-bottom: 0;
+}
+
+.info-container>h3 {
+    font-size: 1.2em;
+}
+
+.info-container>p {
+    font-size: 1em;
+}
+
+.recipe-info,
+.info-container {
+    margin: 1.5em;
+}
+
+.recipe-info>* {
+    font-size: 1em;
+}
+
+.review-form {
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-field {
+    display: flex;
+}
+
+.field-label,
+.field-input>* {
+    font-size: 3em;
+    font-family: 'Fenix', serif;
+}
+
+.field-input>* {
+    height: 2em;
+    border-radius: 10px;
+    margin-top: 1em;
+    font-size: 1em;
+    margin-bottom: 2em;
+}
+
+.comment {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 1em;
+}
+
+.comment>* {
+    height: 10em;
+    margin: 0.5em;
+    width: 100%;
+}
+
+.button-wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.form-button {
+    transition: linear 0.2s;
+    padding: 0.5em 0;
+    background-color: #c4dfaa;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    margin: 1em 2em;
+    font-size: 1em;
+    width: 100%;
+}
+
+.form-button:hover {
+    opacity: 0.8;
+    padding-left: 2em;
+}
+
+.note-bubble {
+    display: flex;
+    position: relative;
+    margin: 1em;
+}
+
+.review-wrapper {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px black;
+    padding: 0.5em;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    transform: rotateY(180deg);
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    display: block;
+    cursor: pointer;
+}
+
+.rating label:before {
+    content: '';
+    display: block;
+    position: relative;
+    width: 25px;
+    height: 25px;
+    margin-right: 1em;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: solid 1px lightgray;
+    background-color: whitesmoke;
+}
+
+.rating label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    margin-right: 1em;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: solid 1px lightgray;
+    background-color: #c4dfaa;
+    opacity: 0;
+    transition: .5s;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+}
+
+.rating label:hover:after,
+.rating input:checked~label:after {
+    opacity: 1;
+}
+
+#empty-review {
+    margin: 2em;
+    font-size: 2em;
+    font-family: 'Fenix', serif;
+    font-style: italic;
+}
+
+.patient-review {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Fenix', serif;
+}
+
+.review-mainTitle {
+    font-size: 2em;
+    text-align: center;
+    color: #c4dfaa;
+    font-family: 'Baloo Chettan 2';
+}
+
+.review-date {
+    display: flex;
+    align-items: baseline;
+    font-size: 1em;
+}
+
+.review-date>* {
+    margin-right: 1em;
+}
+
+.review-comment {
+    font-size: 1em;
+}
+
+.review-note {
+    align-items: center;
+    min-height: 1.5em;
+    min-width: 1.5em;
+    font-size: 1.5em;
+    background-color: #c4dfaa;
+    border-radius: 50%;
+    color: whitesmoke;
+    font-family: 'Baloo Chettan 2', cursive;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 1160px) {
+    main {
+        width: 50%;
+        margin: auto;
+    }
+
+    .image-wrapper {
+        position: relative;
+
+    }
+
+    .photo-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding-bottom: 10px;
+        border-bottom: 1px lightgray solid;
+    }
+
+    .recipe-img {
+        display: flex;
+        width: 400px;
+        max-height: 650px;
+        border-radius: 20px;
+        margin-right: 2em;
+
+    }
+
+    .quick-info-container {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 400px;
+    }
+
+    .recipe-quick-info>* {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .time {
+        font-size: 2em;
+        margin-right: 2em;
+        margin-left: 0.5em;
+    }
+
+    .recipe-info {
+        margin: 0;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+
+    .info-wrapper {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding-bottom: 10px;
+        border-bottom: 1px lightgray solid;
+    }
+
+    .allergen-infos,
+    .diet-infos {
+        display: flex;
+        align-items: baseline;
+    }
+
+    .allergen-text,
+    .diet-text {
+        margin: 0 1em;
+    }
+
+    .main-info-wrapper {
+        margin: 0;
+    }
+
+    .main-info-wrapper>p {
+        font-size: 1em;
+    }
+
+    .info-container {
+        margin: 0 4em;
+    }
+
+    .info-container>h3 {
+        font-size: 1em;
+    }
+
+    .info-container>p {
+        font-size: 1em;
+    }
+
+    .review-form-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 6em 0;
+        width: 100%;
+    }
+
+    .field-input>* {
+        height: 1.5em;
+        width: 100%;
+        border-radius: 20px;
+        margin-top: 1em;
+        padding: 0.5em;
+        font-size: 1.25em;
+    }
+
+    .rating label:before,
+    .rating label:after {
+        height: 30px;
+        width: 30px;
+    }
+
+    .review-container {
+        margin: 4em;
+    }
+
+    .review-mainTitle {
+        text-align: start;
+    }
+
+    .comment>* {
+        height: 10em;
+        resize: none;
+    }
+
+    .button-wrapper {
+        justify-content: end;
+    }
+
+    .form-button {
+        transition: linear 0.2s;
+        width: 20%;
+        font-size: 1em;
+        margin: 1.5em;
+        cursor: pointer;
+    }
+
+    #empty-review {
+        margin: auto;
+        font-size: 1em;
+    }
+}
