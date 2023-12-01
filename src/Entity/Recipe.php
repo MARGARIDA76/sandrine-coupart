@@ -21,25 +21,29 @@ class Recipe
     private ?string $Description = null;
 
     #[ORM\Column(length: 255)]
-    private ?string $Preparation = null;
+    private ?string $Temps_de_Preparation = null;
 
     #[ORM\Column(length: 255)]
-    private ?string $Repos = null;
+    private ?string $Temps_de_Repos = null;
 
     #[ORM\Column(length: 255)]
-    private ?string $Cuisson = null;
+    private ?string $Temps_de_Cuisson = null;
 
     #[ORM\Column(length: 255)]
     private ?string $Ingredients = null;
 
-    #[ORM\Column(type: Types::TEXT)]
+    #[ORM\Column(length: 255)]
     private ?string $Etapes = null;
 
     #[ORM\Column(type: Types::TEXT)]
     private ?string $Allergenes = null;
 
     #[ORM\Column(type: Types::TEXT)]
-    private ?string $Regimes = null;
+    private ?string $Regime = null;
+
+    #[ORM\ManyToOne(inversedBy: 'recipes')]
+    #[ORM\JoinColumn(nullable: false)]
+    private ?Recette $Recette = null;
 
     public function getId(): ?int
     {
@@ -70,38 +74,38 @@ class Recipe
         return $this;
     }
 
-    public function getPreparation(): ?string
+    public function getTemptsDePreparation(): ?string
     {
-        return $this->Preparation;
+        return $this->Temps_de_Preparation;
     }
 
-    public function setPreparation(string $Preparation): static
+    public function setTempsDePreparation(string $Temps_de_Preparation): static
     {
-        $this->Preparation = $Preparation;
+        $this->Temps_de_Preparation = $Temps_de_Preparation;
 
         return $this;
     }
 
-    public function getRepos(): ?string
+    public function getTempsDeRepos(): ?string
     {
-        return $this->Repos;
+        return $this->Temps_de_Repos;
     }
 
-    public function setRepos(string $Repos): static
+    public function setTempsDeRepos(string $Temps_de_Repos): static
     {
-        $this->Repos = $Repos;
+        $this->Temps_de_Repos = $Temps_de_Repos;
 
         return $this;
     }
 
-    public function getCuisson(): ?string
+    public function getTempsDeCuisson(): ?string
     {
-        return $this->Cuisson;
+        return $this->Temps_de_Cuisson;
     }
 
-    public function setCuisson(string $Cuisson): static
+    public function setTempsDeCuisson(string $Temps_de_Cuisson): static
     {
-        $this->Cuisson = $Cuisson;
+        $this->Temps_de_Cuisson = $Temps_de_Cuisson;
 
         return $this;
     }
@@ -142,14 +146,26 @@ class Recipe
         return $this;
     }
 
-    public function getRegimes(): ?string
+    public function getRegime(): ?string
     {
-        return $this->Regimes;
+        return $this->Regime;
     }
 
-    public function setRegimes(string $Regimes): static
+    public function setRegime(string $Regime): static
     {
-        $this->Regimes = $Regimes;
+        $this->Regime = $Regime;
+
+        return $this;
+    }
+
+    public function getRecette(): ?Recette
+    {
+        return $this->Recette;
+    }
+
+    public function setRecette(?Recette $Recette): static
+    {
+        $this->Recette = $Recette;
 
         return $this;
     }

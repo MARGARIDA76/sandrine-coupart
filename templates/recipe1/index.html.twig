@@ -5,6 +5,7 @@
 {% block body %}
 <main>
             <div>
+                
         <div class="photo-wrapper">
             <div class="image-wrapper">
                 <p class="recipe-reviewAverage">
@@ -61,37 +62,8 @@
                             <p>4. Bon appétit !</p>
                     </div>
     </section>
-
     
-    <div class="is-flex is-flex-direction-column">
-                        <p class="subtitle">Ajouter un commentaire :</p>
-                        <form name="comment" ">
-                        <article class="media">
-                            <div class="media-content">
-                                                                  <div class="column is-two-fifths">
-                                       <label for="comment_user" class="required">Pseudo</label>
-                                       <div class="control has-icons-left mt-2">
-                                           <input type="text" id="comment_user" name="comment[user]" required="required" minlength="2" maxlength="150" class="input is-primary" value="nnnnn">
-                                           <span class="icon is-small is-left">
-                                            <i class="bi bi-person-circle"></i>
-                                        </span>
-                                       </div>
-                                   </div>
-                                                                <div class="field">
-                                    <p class="control">
-                                        <textarea id="comment_message" name="comment[message]" required="required" minlength="5" maxlength="5000" class="textarea is-primary" placeholder="Ajouter un commentaire...">mmmmmmmm</textarea>
-                                    </p>
-                                </div>
-                                <nav class="level">
-                                    <div class="level-left">
-                                        <div class="level-item">
-                                            <button type="submit" class="button is-primary">Submit</button>
-                                        </div>
-                                    </div>
-                                </nav>
-                            </div>
-                        </article>
-        
+
     </main>
 
 {% endblock %}

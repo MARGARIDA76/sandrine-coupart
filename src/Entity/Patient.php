@@ -2,19 +2,21 @@
 
 namespace App\Entity;
 
-use App\Repository\UserRepository;
+use App\Repository\PatientRepository;
+use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
 
-#[ORM\Entity(repositoryClass: UserRepository::class)]
-class User implements UserInterface, PasswordAuthenticatedUserInterface
+#[ORM\Entity(repositoryClass: PatientRepository::class)]
+#[UniqueEntity(fields: ['email'], message: 'There is already an account with this email')]
+class Patient implements UserInterface, PasswordAuthenticatedUserInterface
 {
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column]
     private ?int $id = null;
-
 
     #[ORM\Column(length: 180, unique: true)]
     private ?string $email = null;
@@ -27,6 +29,21 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
      */
     #[ORM\Column]
     private ?string $password = null;
+
+    #[ORM\Column(length: 255)]
+    private ?string $Nom = null;
+
+    #[ORM\Column(length: 255)]
+    private ?string $Prenom = null;
+
+    #[ORM\Column(length: 255)]
+    private ?string $Ville = null;
+
+    #[ORM\Column(type: Types::TEXT)]
+    private ?string $Allergenes = null;
+
+    #[ORM\Column(type: Types::TEXT)]
+    private ?string $Types_Regimes = null;
 
     public function getId(): ?int
     {
@@ -96,5 +113,65 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     {
         // If you store any temporary, sensitive data on the user, clear it here
         // $this->plainPassword = null;
+    }
+
+    public function getNom(): ?string
+    {
+        return $this->Nom;
+    }
+
+    public function setNom(string $Nom): static
+    {
+        $this->Nom = $Nom;
+
+        return $this;
+    }
+
+    public function getPrenom(): ?string
+    {
+        return $this->Prenom;
+    }
+
+    public function setPrenom(string $Prenom): static
+    {
+        $this->Prenom = $Prenom;
+
+        return $this;
+    }
+
+    public function getVille(): ?string
+    {
+        return $this->Ville;
+    }
+
+    public function setVille(string $Ville): static
+    {
+        $this->Ville = $Ville;
+
+        return $this;
+    }
+
+    public function getAllergenes(): ?string
+    {
+        return $this->Allergenes;
+    }
+
+    public function setAllergenes(string $Allergenes): static
+    {
+        $this->Allergenes = $Allergenes;
+
+        return $this;
+    }
+
+    public function getTypesRegimes(): ?string
+    {
+        return $this->Types_Regimes;
+    }
+
+    public function setTypesRegimes(string $Types_Regimes): static
+    {
+        $this->Types_Regimes = $Types_Regimes;
+
+        return $this;
     }
 }
