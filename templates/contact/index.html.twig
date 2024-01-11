@@ -1,10 +1,11 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}New Contact{% endblock %}
+{% block title %}Contact{% endblock %}
 
 {% block body %}
+<div id="container"></div>
 <div class="container">
-  <div id="main" class="col-lg-12 col-sm-11 mx-auto main">
+  <div id="main" class="col-lg-8 col-sm-11 mx-auto main">
     <h1 class="text-center mb-4 mt-5">Formulaire de contact</h1>
     <div class="row no-gutters">
 
@@ -12,10 +13,10 @@
 
         {{ form_start(form) }}
        
-            <div class="col-md-6 mt-5">
+            <div class="col-md-12 mt-5">
                 {{ form_row(form.Nom) }}
             </div>
-            <div class="col-md-6 mt-3">
+            <div class="col-md-12 mt-3">
                 {{ form_row(form.Prenom) }}
             </div>
             <div class="col-md-12 mt-3">
@@ -27,10 +28,11 @@
             <div class="col-md-12 mt-3">
                 {{ form_row(form.Message) }}
             </div>
-            <button type="submit" class="btn btn-outline-primary mt-3">Envoyer</button>
+            <button type="submit" class="btn btn-primary mt-3">Envoyer</button>
+               </div> 
+</div>
+</div>
         {{ form_end(form) }}   
-    </div> 
-</div>
-</div>
+ 
 
 {% endblock %}

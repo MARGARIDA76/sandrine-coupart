@@ -1,139 +1,42 @@
-/*Footer*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;1,500&family=Parisienne&family=Roboto:ital,wght@0,500;0,700;0,900;1,400;1,500;1,900&display=swap');/*Footer*/
 
-footer,
-.footer-branding {
-    display: flex;
-
-}
-
-footer {
-    flex-direction: column;
+.footer {
     background-color: #fae8d2;
-    box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.4);
-    margin-top: 100px;
-}
-
-.footer-branding {
-    justify-content: center;
-}
-
-.footer-title {
-    font-size: 1em;
-    margin: 0.5em;
-   
-}
-
-.footer-branding>p {
-    font-size: 0.7em;
-    text-align: center;
-}
-
-.foot-logo {
-    font-size: 35px;
-    color: #46d40d;
-    font-family: 'Parisienne', sans-serif;
-    margin-top: 50px;
-}
-
-
-
-.footer-contact-link {
-    display: flex;
-    justify-content: center;
-    padding-left: 15px;
-}
-
-.contact-link {
-    padding: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding-left: 10px;
-    flex-direction: column;
-}
-
-.contact-link>li {
-    margin-bottom: 0.5em;
-    font-size: 1em;
-    transition: 350ms ease-in-out;
-    opacity: 0.7;
-}
-
-.contact-link>li:hover {
-    opacity: 1;
-}
-
-a {
     color: black;
-    text-decoration: none;
+    width: 100%;
+    bottom: 0px;
+    left: 0;
+    height: 100%;
+    margin-top: 150px;
 }
 
-p,
-.contact-link>li {
-    font-family: 'Fenix', serif;
-}
+.footer-titre .footer-title {
 
-.success-flash.close {
-    display: none;
-}
-
-
-footer {
-    display: flex;
-    border-top: solid 1px lightgray;
-    padding-top: 10px;
-}
-
-.footer-branding>p {
-    font-size: 1em;
-}
-
-.foot-logo {
-    font-size: 2em;
+    font-family: "Parisienne";
     font-weight: bold;
+    color: #46d40d;
+    font-family: 70px;
 
 }
 
-.footer-title {
-    margin: 0;
+p a:link{
+    
+text-decoration: none
 }
 
-.contact-link {
-    flex-direction: row;
+.footer-titre .footer-title {
+
+    font-family: "Parisienne";
+    font-weight: bold;
+    color: #46d40d;
+    font-family: 70px;
+
 }
 
-.contact-link>li {
-    margin: 1em 3em;
-    font-size: 1em;
-    font-family: 'Fenix', serif;
+.footer-title .my-3 .footer-titre .my-3{
+
+    margin-top: 150px;
 }
 
 
-@media screen and (min-width: 1160px) {
 
-    .footer-branding>p {
-        font-size: 1em;
-    }
-
-    .foot-logo {
-        font-size: 2em;
-    }
-
-    .footer-title {
-        margin: 0;
-    }
-
-    .contact-link {
-        flex-direction: row;
-    }
-
-    .contact-link>li {
-        margin: 1em 3em;
-        font-size: 1em;
-        font-family: 'Fenix', serif;
-        
-    }
-
-       
-}

@@ -8,6 +8,7 @@ use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\Extension\Core\Type\EmailType;
+use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 
 class ContactType extends AbstractType
 {
@@ -18,7 +19,9 @@ class ContactType extends AbstractType
             ->add('Prenom', TextType::class)
             ->add('Email', EmailType::class)
             ->add('Sujet', TextType::class)
-            ->add('Message', TextType::class);
+            ->add('Message', TextareaType::class, [
+                'attr' => ['rows' => 6],
+            ]);
     }
 
     public function configureOptions(OptionsResolver $resolver): void

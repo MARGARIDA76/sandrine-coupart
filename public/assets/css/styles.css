@@ -52,7 +52,7 @@ a.navbar-brand {
 
 .title h1 {
 
-    font-family: Parisienne;
+    font-family: 'Parisienne';
     font-weight: bold;
     text-align: center;
 }
@@ -185,10 +185,33 @@ a.navbar-brand {
 }
 
 
+hr {
+
+    background: #46d40d;
+    width: 150px;
+    margin: 15px auto;
+
+}
+
+.image-rond {
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+/* .recipe-mainTitle, .review-form, #empty-review, .review-note {
+    display: flex;
+    justify-content: center;
+} */
+
+
 @media screen and (max-width: 768px){
 
     .heading{
         padding:0px 20px;
+       
     }
 
          .heading h1{
@@ -217,6 +240,12 @@ a.navbar-brand {
     margin-right: 0px;
     margin-bottom: 20px;
  }
+
+  #container {
+      background: url('../images/diete0.jpg');
+      background-repeat: no-repeat;
+      
+  }
 
 
 }
