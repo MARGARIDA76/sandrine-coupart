@@ -1,4 +1,6 @@
 Résumé du projet:
+
+
 Dans cette ECF entraînement il nous à était demandé de mettre en place une application WEB pour une nutritionniste.
 1 . Méthode merise pour ma conception de donnée. Ce qui ma permis d’identifier rapidement les différentes entité et leur relation.
 2 . Mettre en place ma charte graphique, et ma maquette avec Figma 
@@ -6,7 +8,10 @@ Dans cette ECF entraînement il nous à était demandé de mettre en place une a
 4 . Pour la partie Back mon choix c’est porté sur le Framework Symfony qui propose un gain de temps non négligeable pour la conception. Surtout grâce, doctrine , easy-admin et d’autre bundle très utiles.
 5. En ce qui concerne la partie déploiement j’ai fait le choix d’utilisé Nextlifly, qui propose une version gratuite. 
 L’ensemble de ma structure de site ma permis de mettre en place les 8 compétences du référentiel.
+
+
 Installation en local:
+
 1. Creation du repo github
   - https://github.com/MARGARIDA76/sandrine-coupart.git
   - git init
